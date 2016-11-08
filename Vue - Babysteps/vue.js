@@ -5,9 +5,16 @@
 //   }
 // })
 
-var app2 = new Vue({
-  el: '#app-2',
+// var app2 = new Vue({
+//   el: '#app-2',
+//   data: {
+//     message: 'You loaded this page on ' + new Date()
+//   }
+// })
+
+var app3 = new Vue({
+  el: '#app-3',
   data: {
-    message: 'You loaded this page on ' + new Date()
+    seen: true
   }
 })
