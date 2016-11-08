@@ -23,9 +23,9 @@ export default {
       if (redirect) {
         router.go(redirect)
       }
-    }).error((err)) => {
+    }).error((err) => {
       context.error = err
-    }
+    })
   },
 
   signup(context, creds, redirect) {
@@ -37,9 +37,9 @@ export default {
       if (redirect) {
         router.go(redirect)
       }
-    }).error((err)) => {
+    }).error((err) => {
       context.error = err
-    }
+    })
   },
 
   // To log out we just need to remove the token
