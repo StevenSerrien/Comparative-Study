@@ -29,6 +29,7 @@
 
   <script>
   import auth from '../auth'
+  
   export default {
     data() {
       return {
