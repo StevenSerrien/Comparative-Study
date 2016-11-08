@@ -9,10 +9,12 @@
   <!-- <div id='app'>
     {{ message }}
   </div> -->
-  <div id='app-3'>
-    <div v-if='seen'>
-      Now you see me.
-    </div>
+  <div id='app-4'>
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
   </div>
   <!-- Include that vue.js -->
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
