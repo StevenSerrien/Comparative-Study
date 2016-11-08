@@ -18,9 +18,9 @@ router.map({
   '/home': {
     component: Home
   },
-  // 'secretquote': {
-  //   component: SecretQuote
-  // },
+  'secretquote': {
+    component: SecretQuote
+  },
   '/login': {
     component: Login
   },

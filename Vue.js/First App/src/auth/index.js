@@ -63,11 +63,10 @@ export default {
     }
   },
 
-  // The Object to be passed as a header for authenticated requests
-
+  // The object to be passed as a header for authenticated requests
   getAuthHeader() {
     return {
-      'Authorization': 'Bearer' + localStorage.getItem('id_token')
+      'Authorization': 'Bearer ' + localStorage.getItem('id_token')
     }
   }
 }
