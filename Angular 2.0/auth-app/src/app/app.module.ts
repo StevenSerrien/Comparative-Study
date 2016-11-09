@@ -8,18 +8,22 @@ import { NgModule } from '@angular/core';
 import { AUTH_PROVIDERS } from 'angular2-jwt';
 
 
-// import { AuthGuard } from './common/auth.guard';
-// import { Home } from './home';
-// import { Login } from './login';
-// import { Signup } from './signup';
+import { AuthGuard } from './common/auth.guard';
+
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    SignupComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,8 @@ import { LoginComponent } from './login/login.component';
     })
   ],
   providers: [
-    AUTH_PROVIDERS
+    AUTH_PROVIDERS,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
