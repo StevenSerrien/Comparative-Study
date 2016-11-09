@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AUTH_PROVIDERS } from 'angular2-jwt';
+import { AuthHttp, AuthConfig, provideAuth } from 'angular2-jwt';
+import { JwtHelper } from 'angular2-jwt';
 
 
 import { AuthGuard } from './common/auth.guard';
@@ -35,7 +37,8 @@ import { HomeComponent } from './home/home.component';
   ],
   providers: [
     AUTH_PROVIDERS,
-    AuthGuard
+    AuthGuard,
+    JwtHelper
   ],
   bootstrap: [AppComponent]
 })
