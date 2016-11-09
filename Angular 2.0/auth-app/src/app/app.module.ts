@@ -14,10 +14,12 @@ import { AUTH_PROVIDERS } from 'angular2-jwt';
 // import { Signup } from './signup';
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
