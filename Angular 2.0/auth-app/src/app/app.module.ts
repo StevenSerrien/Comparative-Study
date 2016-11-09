@@ -12,7 +12,7 @@ import { AUTH_PROVIDERS } from 'angular2-jwt';
 // import { Home } from './home';
 // import { Login } from './login';
 // import { Signup } from './signup';
-// import { routes } from './app.routes';
+import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -23,9 +23,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    // RouterModule.forRoot(routes, {
-    //   useHash: true
-    // })
+    RouterModule.forRoot(routes, {
+      useHash: true
+    })
   ],
   providers: [
     AUTH_PROVIDERS
